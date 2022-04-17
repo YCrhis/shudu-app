@@ -1,0 +1,86 @@
+.slidebar{
+    flex: 3;
+    height: calc(100vh - 55px);
+    padding: 6px;
+    overflow-y: scroll;
+    position: sticky;
+    top: 7%;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(135, 135, 135);
+    border-radius: 2rem;
+}
+
+.slidebarWrapper{
+    padding:20px ;
+}
+
+.slidebarList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slidebarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.slidebarList i {
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+.slidebarHr{
+    margin: 20px 0;
+    background-color: #b5b5b5;
+}
+
+.slidebarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slidebarFriendList h2{
+    margin-bottom: 1.5rem;
+    color: rgb(84, 84, 84);
+}
+
+.slidebarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.slidebarFriend img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.slidebarSearh{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding: 5px 10px;
+    border: solid 1px rgb(105, 105, 105);
+}
+.slidebarSearh input{
+    width: 100%;
+    border: none;
+    outline: none;
+}

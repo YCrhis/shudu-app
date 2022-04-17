@@ -1,0 +1,124 @@
+.login{
+    height: 100vh;
+    width: 100%;
+}
+
+.loginWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginLeft{
+    text-align: center;
+    width: 100%;
+}
+
+.loginLeftPresentation{
+    margin-bottom: 2rem;
+    color: rgb(40, 40, 40);
+}
+
+.loginLeftTitle{
+    font-size: calc(1rem + 2vw);
+}
+
+.loginWrapper form{
+    width: 40%;
+    margin: auto;
+}
+
+.loginLabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 5px 10px 5px #4fe5ff60;
+    border-radius: 2rem;
+    padding: 10px 15px;
+}
+
+.loginLabel i{
+    color: #4fd0ff;
+}
+
+.loginWrapper form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    background: none;
+}
+
+.loginWrapper form button{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background: linear-gradient(to left, #4fffea, #499eff);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.loginWrapper form button:hover{
+    background: #4fd0ff;
+}
+
+.loginRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(#4fffea, #499eff);
+    height: 100vh;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+.loginRightTitle{
+    font-size: calc(2vw + 1.5rem);
+    margin-bottom: 1rem;
+}
+
+.loginRightTitle span{
+    font-size: calc(2vw + 2rem);
+    font-weight: bolder;
+}
+
+.loginRightRegister{
+    font-size: 13px;
+    color: #499eff;
+}
+
+.loginRightRegister span{
+    color: #24f4ff;  
+    font-weight: bolder; 
+    cursor: pointer;
+}
+
+
+@media(max-width:800px){
+    .loginWrapper form{
+        width: 80%;
+    }
+}
+
+@media(max-width:800px){
+ .loginRight{
+     display: none;
+ }   
+ .login{
+     background-image: url(https://www.wallpaperkiss.com/wimg/b/146-1460540_big.jpg);
+     background-size: cover;
+ }
+ .loginRightRegister{
+     color: black;
+ }
+}

@@ -1,0 +1,52 @@
+.rightbarTitle{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rightbarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rightbarInfoItem{
+    margin-bottom: 10px;
+}
+
+.rightbarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: rgb(63, 63, 63);
+}
+
+.rightbarInfoValue{
+    font-weight: 300;
+}
+
+.rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rightbarFollwing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightbarButton{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background: linear-gradient(to left, #4fffea, #499eff);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 500ms;
+}

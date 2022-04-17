@@ -1,0 +1,119 @@
+.share {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(208, 208, 208, 0.166);
+    transition: all 500ms;
+}
+
+.share:hover{
+    transform: scale(1.009);
+}
+
+.shareWrapper {
+    padding: 10px;
+}
+
+.shareTop {
+    display: flex;
+    align-items: center;
+}
+
+.shareTop img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.shareInput{
+    border: none;
+    width: 100%;
+}
+
+.shareInput:focus{
+    outline: none;
+}
+
+.shareHr{
+    margin-top: .5rem;
+    margin-bottom: 10px;
+}
+
+.shareButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shareOptions{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.shareOption{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.shareOption i{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.shareOption .shareOptionText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shareButton{
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background: linear-gradient(to left, #4fffea, #499eff);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.shareButton:hover{
+    background: #499eff; 
+}
+
+.camera{
+    color: orange;
+}
+
+.tag{
+    color: red;
+}
+
+.pin{
+    color: #2365ff; 
+}
+
+.shareImageContainer{
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.shareImage{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.shaedcancel{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    cursor: pointer;
+}
