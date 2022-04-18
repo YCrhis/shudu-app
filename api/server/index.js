@@ -9,6 +9,8 @@ const morgan = require("morgan");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/post");
+const conversationRoute = require("./routes/conversation");
+const messageRoute = require("./routes/messages")
 const path = require('path');
 const cloudinary = require('cloudinary');
 
@@ -17,6 +19,7 @@ cloudinary.config({
   api_key:process.env.API_KEY,
   api_Secret:process.env.API_SECRET
 })
+delete mongoose.connection.models['Conversation'];
 
 dotenv.config();
 
@@ -58,6 +61,8 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/conversation", conversationRoute)
+app.use("/api/message", messageRoute)
 
 app.listen(8080, () => {
   console.log("server works :)");

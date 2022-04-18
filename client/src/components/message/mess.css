@@ -1,0 +1,40 @@
+.mess{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.messImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.messTop{
+    display: flex;
+    align-items: center;
+}
+
+.messText{
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: #499eff;
+    color: white;
+    max-width: 300px;
+}
+
+.messBottom{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.mess.own{
+    align-items: flex-end;
+}
+
+.mess.own .messText{
+    background: #ccc;
+    color: black;
+}
